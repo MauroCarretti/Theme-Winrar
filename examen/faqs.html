@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQS</title>
+    <link rel="stylesheet" href="/assets/scss/estilo.css" class="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+  />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="row bg-darkblue ">
+            <div class="col-12 text-center py-3 titulos">
+                <a href="/cuenta.html" class="text-decoration-none text-white m-3">MI CUENTA</a>
+                <a href="#" class="text-decoration-none text-white m-3">¿QUIENES SOMOS?</a>
+                <a href="#" class="text-decoration-none text-white m-3">CONTACTAR</a>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-sm">
+            <div class="container titulos">
+                <a class="navbar-brand" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="197"
+                        height="74" viewBox="0 0 197 74">
+                        <defs>
+                            <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%"
+                                viewBox="0 0 309 116">
+                                <image width="309" height="116"
+                                    xlink:href="data:image/jpeg;base64,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" />
+                            </pattern>
+                        </defs>
+                        <rect id="logo2" width="197" height="74" fill="url(#pattern)" />
+                    </svg>
+                </a>
+                <div>
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="#">INICIO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/descarga.html">DESCARGAS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">COMPRAR</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/faqs.html">FAQS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">NOVEDADES</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+     <!-------------------------------------------------------------------SECCION--------------------------------------------------------------------------->
+    <section class="bg-img">
+        <div class="container py-5">
+            <div class="row text-center ">
+                <div class="col-8 mx-auto">
+                    <h1 class="text-white titulos">Preguntas frecuentes</h1>
+                    <h2 class="mt-4 titulos">Aquí puede encontrar varios artículos con las respuestas a las preguntas mas frequentes hechas
+                        por los usuarios.</h2>
+                    <p class="mt-4 textos">Si no encuentra la respuesta a su pregunta o problema, use la opción preguntar para enviar su
+                        pregunta al equipo de soporte.</p>
+                        <div class="input-group">
+                            <input type="search" class="form-control rounded" placeholder="¿Cual es su pregunta?" aria-label="Search" aria-describedby="search-addon" />
+                            <button type="button" class="btn "><svg xmlns="http://www.w3.org/2000/svg" width="41" height="31" viewBox="0 0 41 31">
+                                <text id="_" data-name="" transform="translate(1 1)" fill="#707070" font-size="30" font-family="FontAwesome6Free-Solid, 'Font Awesome \36  Free Solid'"><tspan x="0" y="26"></tspan></text>
+                              </svg>
+                              </button>
+                          </div>
+                        
+                </div>
+            </div>
+        </div>
+
+    </section>
+     <!-------------------------------------------------------------------SECCION--------------------------------------------------------------------------->
+    <article>
+        <div class="container-fluid ">
+            <div class="row bg-lgrey px-5 py-4 titulos text-center">
+                <h2 class="col-4 ">Temas Populares</h2>
+                <h2 class="col-4">Temas recientes</h2>
+                <h2 class="col-4">Conocimiento base</h2>
+            </div>
+            <!-------------------------------------------------------------------fila-1--------------------------------------------------------------------------->
+            <div class="row m-5">
+                <div class="col-4 textos">
+                    <div class="row ">
+                    <a href="#" class="text-decoration-none px-5"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32">
+                            <text id="_" data-name="" transform="translate(1)" fill="#707070" font-size="30"
+                                font-family="FontAwesome6Free-Regular, 'Font Awesome \36  Free'">
+                                <tspan x="0" y="26"></tspan>
+                            </text>
+                        </svg>
+                        Cómo abrir un archivo RAR en Windows</a>
+                        <a href="#" class="text-decoration-none px-5 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32">
+                            <text id="_" data-name="" transform="translate(1)" fill="#707070" font-size="30"
+                                font-family="FontAwesome6Free-Regular, 'Font Awesome \36  Free'">
+                                <tspan x="0" y="26"></tspan>
+                            </text>
+                        </svg>
+                        Como instalar WinRAR en Windows</a>
+                        <a href="#" class="text-decoration-none px-5 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32">
+                            <text id="_" data-name="" transform="translate(1)" fill="#707070" font-size="30"
+                                font-family="FontAwesome6Free-Regular, 'Font Awesome \36  Free'">
+                                <tspan x="0" y="26"></tspan>
+                            </text>
+                        </svg>
+                        Descargar WinRAR gratis</a>
+                        <a href="#" class="text-decoration-none px-5 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32">
+                            <text id="_" data-name="" transform="translate(1)" fill="#707070" font-size="30"
+                                font-family="FontAwesome6Free-Regular, 'Font Awesome \36  Free'">
+                                <tspan x="0" y="26"></tspan>
+                            </text>
+                        </svg>
+                        Como reparar un archivo dañados</a>
+                        <a href="#" class="text-decoration-none px-5 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32">
+                            <text id="_" data-name="" transform="translate(1)" fill="#707070" font-size="30"
+                                font-family="FontAwesome6Free-Regular, 'Font Awesome \36  Free'">
+                                <tspan x="0" y="26"></tspan>
+                            </text>
+                        </svg>
+                        Como comprimir un archivo en varias partes</a>
+                        <a href="#" class="text-decoration-none px-5 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32">
+                            <text id="_" data-name="" transform="translate(1)" fill="#707070" font-size="30"
+                                font-family="FontAwesome6Free-Regular, 'Font Awesome \36  Free'">
+                                <tspan x="0" y="26"></tspan>
+                            </text>
+                        </svg>
+                        Como instalar RAR en Mac OS X</a>
+                        <a href="#" class="text-decoration-none px-5 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32">
+                            <text id="_" data-name="" transform="translate(1)" fill="#707070" font-size="30"
+                                font-family="FontAwesome6Free-Regular, 'Font Awesome \36  Free'">
+                                <tspan x="0" y="26"></tspan>
+                            </text>
+                        </svg>
+                        Que es WinRAR</a>
+                        <a href="#" class="text-decoration-none px-5 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32">
+                            <text id="_" data-name="" transform="translate(1)" fill="#707070" font-size="30"
+                                font-family="FontAwesome6Free-Regular, 'Font Awesome \36  Free'">
+                                <tspan x="0" y="26"></tspan>
+                            </text>
+                        </svg>
+                        Como instalar RAR en Linux</a>
+                        <a href="#" class="text-decoration-none px-5 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32">
+                            <text id="_" data-name="" transform="translate(1)" fill="#707070" font-size="30"
+                                font-family="FontAwesome6Free-Regular, 'Font Awesome \36  Free'">
+                                <tspan x="0" y="26"></tspan>
+                            </text>
+                        </svg>
+                        Como comprimir ficheros con WinRAR</a>
+                        <a href="#" class="text-decoration-none px-5 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32">
+                            <text id="_" data-name="" transform="translate(1)" fill="#707070" font-size="30"
+                                font-family="FontAwesome6Free-Regular, 'Font Awesome \36  Free'">
+                                <tspan x="0" y="26"></tspan>
+                            </text>
+                        </svg>
+                        Cómo abrir un archivo RAR en Mac OSX</a>
+                    </div>
+                    <!-------------------------------------------------------------------fila-2--------------------------------------------------------------------------->
+                </div>
+                <div class="col-4 textos ">
+                    <div class="row ">
+                    <a href="#" class="text-decoration-none px-4 mt-1 "><svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32">
+                            <text id="_" data-name="" transform="translate(1)" fill="#707070" font-size="30"
+                                font-family="FontAwesome6Free-Regular, 'Font Awesome \36  Free'">
+                                <tspan x="0" y="26"></tspan>
+                            </text>
+                        </svg>
+                        Como descomprimir varios archivos con la misma contraseña</a>
+                        <a href="#" class="text-decoration-none px-4 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32">
+                            <text id="_" data-name="" transform="translate(1)" fill="#707070" font-size="30"
+                                font-family="FontAwesome6Free-Regular, 'Font Awesome \36  Free'">
+                                <tspan x="0" y="26"></tspan>
+                            </text>
+                        </svg>
+                        Como descomprimir recursivamente todos los archivos</a>
+                        <a href="#" class="text-decoration-none px-4 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32">
+                            <text id="_" data-name="" transform="translate(1)" fill="#707070" font-size="30"
+                                font-family="FontAwesome6Free-Regular, 'Font Awesome \36  Free'">
+                                <tspan x="0" y="26"></tspan>
+                            </text>
+                        </svg>
+                        Como identificarse mediante OpenID o Windows Live ID</a>
+                        <a href="#" class="text-decoration-none px-4 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32">
+                            <text id="_" data-name="" transform="translate(1)" fill="#707070" font-size="30"
+                                font-family="FontAwesome6Free-Regular, 'Font Awesome \36  Free'">
+                                <tspan x="0" y="26"></tspan>
+                            </text>
+                        </svg>
+                        Cómo abrir un archivo RAR en Linux</a>
+                        <a href="#" class="text-decoration-none px-4 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32">
+                            <text id="_" data-name="" transform="translate(1)" fill="#707070" font-size="30"
+                                font-family="FontAwesome6Free-Regular, 'Font Awesome \36  Free'">
+                                <tspan x="0" y="26"></tspan>
+                            </text>
+                        </svg>
+                        Como crear comentarios en color</a>
+                        <a href="#" class="text-decoration-none px-4 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32">
+                            <text id="_" data-name="" transform="translate(1)" fill="#707070" font-size="30"
+                                font-family="FontAwesome6Free-Regular, 'Font Awesome \36  Free'">
+                                <tspan x="0" y="26"></tspan>
+                            </text>
+                        </svg>
+                        Cómo abrir un archivo RAR en Mac OSX</a>
+                        <a href="#" class="text-decoration-none px-4 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32">
+                            <text id="_" data-name="" transform="translate(1)" fill="#707070" font-size="30"
+                                font-family="FontAwesome6Free-Regular, 'Font Awesome \36  Free'">
+                                <tspan x="0" y="26"></tspan>
+                            </text>
+                        </svg>
+                        WinRAR corporativo</a>
+                        <a href="#" class="text-decoration-none px-4 mt-1 "><svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32">
+                            <text id="_" data-name="" transform="translate(1)" fill="#707070" font-size="30"
+                                font-family="FontAwesome6Free-Regular, 'Font Awesome \36  Free'">
+                                <tspan x="0" y="26"></tspan>
+                            </text>
+                        </svg>
+                        Como y porque activar JavaScript</a>
+                        <a href="#" class="text-decoration-none px-4 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32">
+                            <text id="_" data-name="" transform="translate(1)" fill="#707070" font-size="30"
+                                font-family="FontAwesome6Free-Regular, 'Font Awesome \36  Free'">
+                                <tspan x="0" y="26"></tspan>
+                            </text>
+                        </svg>
+                        Cómo abrir un archivo RAR en Linux</a>
+                        <a href="#" class="text-decoration-none px-4 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32">
+                            <text id="_" data-name="" transform="translate(1)" fill="#707070" font-size="30"
+                                font-family="FontAwesome6Free-Regular, 'Font Awesome \36  Free'">
+                                <tspan x="0" y="26"></tspan>
+                            </text>
+                        </svg>
+                        Como comprimir cada fichero en archivos separados</a>
+                    </div>
+                </div>
+                <!-------------------------------------------------------------------fila-3--------------------------------------------------------------------------->
+          <div class="col-4 textos te">
+            <div class="row mx-5 px-5">
+                <a href="#" class="text-decoration-none px-4 mt-1 "><svg xmlns="http://www.w3.org/2000/svg" width="40" height="31" viewBox="0 0 32 31">
+                    <text id="_" data-name="" transform="translate(0 1)" fill="#707070" font-size="30" font-family="FontAwesome6Free-Solid, 'Font Awesome \36  Free Solid'"><tspan x="0" y="26"></tspan></text>
+                  </svg>
+                  Instalación</a>
+                <a href="#" class="text-decoration-none px-4 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="31" viewBox="0 0 30 31">
+                    <text id="_" data-name="" transform="translate(1 1)" fill="#707070" font-size="30" font-family="FontAwesome6Free-Regular, 'Font Awesome \36  Free'"><tspan x="0" y="26"></tspan></text>
+                  </svg>                  
+                  Descompresión</a>
+                <a href="#" class="text-decoration-none px-4 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="31" viewBox="0 0 33 31">
+                    <text id="_" data-name="" transform="translate(1 1)" fill="#707070" font-size="30" font-family="FontAwesome6Free-Solid, 'Font Awesome \36  Free Solid'"><tspan x="0" y="26"></tspan></text>
+                  </svg>
+                  Compresión</a>
+                <a href="#" class="text-decoration-none px-4 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="31" viewBox="0 0 25 31">
+                    <text id="_" data-name="" transform="translate(0 1)" fill="#707070" font-size="30" font-family="FontAwesome6Free-Regular, 'Font Awesome \36  Free'"><tspan x="0" y="26"></tspan></text>
+                  </svg>
+                  
+                  Licencia y registro</a>
+                <a href="#" class="text-decoration-none px-4 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="31" viewBox="0 0 32 31">
+                    <text id="_" data-name="" transform="translate(0 1)" fill="#707070" font-size="30" font-family="FontAwesome6Free-Solid, 'Font Awesome \36  Free Solid'"><tspan x="0" y="26"></tspan></text>
+                  </svg>                  
+                  Manual de uso</a>
+                <a href="#" class="text-decoration-none px-3 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="33" viewBox="0 0 42 33">
+                    <text id="_" data-name="" transform="translate(1 1)" fill="#707070" font-size="30" font-family="FontAwesome6Free-Solid, 'Font Awesome \36  Free Solid'"><tspan x="0" y="26"></tspan></text>
+                  </svg> Desarrolladores</a>
+                <a href="#" class="text-decoration-none px-4 mt-1  "><svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" viewBox="0 0 23 35">
+                    <text id="_" data-name="" transform="translate(0 1)" fill="#707070" font-size="30" font-family="FontAwesome6Free-Regular, 'Font Awesome \36  Free'"><tspan x="0" y="26"></tspan></text>
+                  </svg> Página web</a>
+                <a href="#" class="text-decoration-none px-4 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="31" viewBox="0 0 34 31">
+                    <text id="_" data-name="" transform="translate(0 1)" fill="#707070" font-size="30" font-family="FontAwesome6Free-Solid, 'Font Awesome \36  Free Solid'"><tspan x="0" y="26"></tspan></text>
+                  </svg>
+                  Otros sitios</a>
+                <a href="#" class="text-decoration-none px-4 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="43" height="30" viewBox="0 0 38 30">
+                    <text id="_" data-name="" fill="#707070" font-size="30" font-family="FontAwesome6Free-Solid, 'Font Awesome \36  Free Solid'"><tspan x="0" y="26"></tspan></text>
+                  </svg>
+                  Enlaces</a>  
+                
+            </div>
+          </div>
+    </article>
+<!-------------------------------------------------------------------FOOTER----------------------------------------------------------------------------------------------------->
+    <footer>
+        <div class="container-fluid bg-darkblue text-center text-white py-4 ">
+            <div class="row ">
+                <div class="col-12 titulos">
+                    <a href="#" class="text-decoration-none text-white m-3">COOKIES</a>
+                    <a href="#" class="text-decoration-none text-white m-3">PRIVACIDAD</a>
+                    <a href="#" class="text-decoration-none text-white m-3">CONDICIONES</a>
+                    <a href="#" class="text-decoration-none text-white m-3">GENERALES</a>
+                    <a href="#" class="text-decoration-none text-white m-3">QUIENES SOMOS</a>
+                    <a href="#" class="text-decoration-none text-white m-3">CONTACTAR</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>

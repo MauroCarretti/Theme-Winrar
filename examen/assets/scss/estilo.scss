@@ -1,0 +1,88 @@
+@import"../scss/bootstrap-5.2.2/scss/bootstrap.scss";
+//Variables//
+$color-1:#162F4E;
+$color-2:#707070;
+$color-3:#5675AC;
+$color-4:hwb(0 94% 6% / 0.650);
+$tipografia-1: 'Roboto', sans-serif;
+$tipografia-2: 'Crete Round', serif;
+.bg-darkblue{
+    background-color: #162F4E;
+}
+
+.bg-lblue{
+background-color:hsla(217, 100%, 50%, 0.17) ;
+}
+
+.fcolor-b{
+    color: $color-2;
+}
+.bg-lgrey{
+    background-color: $color-4;
+
+}
+.titulos{
+    font-family: $tipografia-1;
+}
+.textos{
+    font-family: $tipografia-2;
+}
+.card-2{
+    width: 350px;
+    height: 400px;
+    padding: 16px 0px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+
+.bg-img{
+    background-image:url("/assets/img/images.jpeg") ;
+    background-size: cover;
+}
+
+.form-check-label{
+    margin-left: -10rem;
+}
+
+.form-control{
+    height: 3rem;
+    background-color:$color-4;
+}
+
+.card{
+    width: 28rem;
+    height: 30rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.btn{
+    margin-left: 32%;
+    background-color: #ffffff;
+   
+}
+
+.form-check-input{
+    background-color:$color-4;
+    padding: 1rem;
+}
+
+@media (max-width: 425px){
+    .card{
+        width: 22rem;
+        height: 30rem;
+    }
+    .form-check-input{
+        margin-right: 5rem;
+    }
+}
+
+@media (max-width: 325px){
+    .card{
+        width: 18rem;
+        height: 30rem;
+    }
+    .form-check-input{
+        margin-right: 160px;
+    } 
+}
